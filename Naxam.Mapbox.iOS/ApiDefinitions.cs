@@ -696,10 +696,10 @@ namespace Mapbox
 		bool ScrollEnabled { [Export("isScrollEnabled")]get; set; }
 		//@property(nonatomic, getter=isRotateEnabled) BOOL rotateEnabled;
 		[Export("rotateEnabled")]
-		bool RotateEnabled { [Export("isRotateEnabled")]get; set; }
+		bool RotateEnabled { [Bind ("isRotateEnabled")] get; set; }
 		//@property(nonatomic, getter=isPitchEnabled) BOOL pitchEnabled;
 		[Export("pitchEnabled")]
-		bool PitchEnabled { [Export("isPitchEnabled")]get; set; }
+		bool PitchEnabled { [Bind("isPitchEnabled")]get; set; }
 		//@property(nonatomic) nfloat decelerationRate;
 		[Export("decelerationRate")]
 		nfloat DecelerationRate { get; set; }
